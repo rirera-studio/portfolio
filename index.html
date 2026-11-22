@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RIRERA STUDIO｜サムネイル・SNSバナー作品集</title>
+<meta name="description" content="YouTubeサムネイル、インスタ投稿・カルーセル・ストーリーズ、SNS・Web広告バナーの作品集です。スマホで小さく見ても伝わるデザインを作ります。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F1E9; --paper2:#EFE7DB; --ink:#2A231D; --sub:#5A5046; --mute:#8C8178; --line:#DCD2C5;
+  --accent:#B8623F; --accent-d:#9A4E30; --card:#FFFFFF; --dark:#1F1A16; --dark2:#2B241F;
+  --serif:"Noto Serif JP",serif; --sans:"Noto Sans JP",sans-serif;
+  --wrap:1180px; --gut:clamp(16px,4vw,40px);
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; scroll-padding-top:72px; }
+body{ background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.8; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img{ display:block; width:100%; height:auto; }
+a{ color:inherit; }
+.wrap{ max-width:var(--wrap); margin:0 auto; padding:0 var(--gut); }
+.nb{ white-space:nowrap; }
+
+/* ヘッダー */
+.top{ position:sticky; top:0; z-index:20; background:rgba(246,241,233,.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color .3s; }
+.top.scrolled{ border-color:var(--line); }
+.top .wrap{ display:flex; align-items:center; height:64px; gap:24px; }
+.logo{ font-family:var(--serif); font-weight:600; letter-spacing:.32em; font-size:14px; text-decoration:none; }
+.logo span{ color:var(--accent); }
+.nav-cta{ font-size:13px; font-weight:700; text-decoration:none; padding:8px 18px; border-radius:999px; background:var(--ink); color:#fff; letter-spacing:.06em; }
+.nav-cta:hover{ background:var(--accent); }
+@media (max-width:760px){ .nav-cta{ margin-left:auto; } }
+.nav{ margin-left:auto; display:flex; gap:28px; font-size:13px; letter-spacing:.08em; }
+.nav a{ text-decoration:none; color:var(--sub); position:relative; padding:4px 0; }
+.nav a:hover{ color:var(--ink); }
+.nav a::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .3s; }
+.nav a:hover::after{ transform:scaleX(1); }
+@media (max-width:760px){ .nav{ display:none; } }
+
+/* ヒーロー */
+.hero{ padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,112px); }
+.hero .wrap{ display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(32px,5vw,72px); align-items:center; }
+.eyebrow{ font-family:var(--serif); font-size:12px; letter-spacing:.42em; color:var(--accent); font-weight:600; }
+.hero h1{ font-family:var(--serif); font-weight:600; font-size:clamp(34px,4.6vw,58px); line-height:1.4; letter-spacing:.04em; margin:22px 0 0; }
+.hero h1 em{ font-style:normal; color:var(--accent); }
+.hero .rule{ width:56px; height:2px; background:var(--accent); margin:32px 0 26px; }
+.hero p.lead{ font-size:clamp(15px,1.4vw,17px); color:var(--sub); line-height:2; }
+.hero .kind{ display:inline-block; margin-top:18px; font-size:clamp(14px,1.3vw,16px); font-weight:700; letter-spacing:.08em; padding:6px 14px; background:var(--ink); color:#fff; border-radius:4px; }
+.hero h1{ margin-top:16px; }
+.facts{ list-style:none; display:inline-grid; grid-template-columns:repeat(3,auto); justify-content:start; gap:0; margin-top:28px; border:1px solid var(--line); border-radius:10px; background:rgba(255,255,255,.6); }
+.facts li{ padding:12px 22px; font-size:13px; line-height:1.3; }
+.facts li + li{ border-left:1px solid var(--line); }
+.facts b{ font-family:var(--serif); font-size:24px; font-weight:600; color:var(--accent); margin-right:2px; }
+.facts small{ display:block; font-size:11.5px; color:var(--sub); margin-top:5px; letter-spacing:.04em; }
+@media (max-width:420px){ .facts li{ padding:10px 12px; } .facts b{ font-size:20px; } }
+.shop-note{ font-size:12.5px; color:var(--mute); margin-top:14px; }
+.to-contact{ display:inline-block; margin-top:10px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:1px; }
+.works-end{ text-align:center; margin-top:56px; padding:28px; border:1px dashed var(--line); border-radius:12px; }
+.works-end p{ font-size:14px; color:var(--sub); }
+.works-end .to-contact{ font-size:14px; }
+.btns{ display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+.btn{ display:inline-flex; align-items:center; gap:10px; text-decoration:none; font-size:14px; font-weight:700; letter-spacing:.06em; padding:14px 26px; border-radius:999px; transition:transform .2s, background .2s; }
+.btn.main{ background:var(--ink); color:#fff; }
+.btn.main:hover{ background:var(--accent); transform:translateY(-2px); }
+.btn.ghost{ border:1px solid var(--ink); }
+.btn.ghost:hover{ background:var(--ink); color:#fff; }
+.collage{ background:var(--dark); border-radius:16px; padding:clamp(18px,2.6vw,34px); display:grid; grid-template-columns:1fr .87fr; grid-template-areas:"a a" "b d" "c d"; gap:clamp(12px,1.5vw,20px); align-items:start; box-shadow:0 30px 60px -30px rgba(31,26,22,.55); }
+.collage figure{ margin:0; animation:rise .9s cubic-bezier(.2,.7,.2,1) both; }
+.collage figure img{ border-radius:6px; box-shadow:0 10px 26px rgba(0,0,0,.45); }
+.collage figcaption{ font-size:10px; letter-spacing:.24em; color:#B9AA9A; margin-bottom:7px; }
+.collage .c1{ grid-area:a; animation-delay:.05s; }
+.collage .c2{ grid-area:d; animation-delay:.2s; }
+.collage .c3{ grid-area:b; animation-delay:.35s; }
+.collage .c4{ grid-area:c; animation-delay:.5s; }
+@keyframes rise{ from{ opacity:0; transform:translateY(24px); } to{ opacity:1; transform:none; } }
+@media (max-width:860px){ .hero .wrap{ grid-template-columns:1fr; } .collage{ margin-top:8px; } }
+
+/* セクション共通 */
+section.block{ padding:clamp(64px,9vw,120px) 0; }
+section.alt{ background:var(--paper2); }
+section.darkb{ background:var(--dark); color:#F3ECE2; }
+.sh{ display:flex; flex-wrap:wrap; align-items:flex-end; gap:12px 32px; margin-bottom:clamp(32px,4vw,52px); }
+.sh .no{ font-family:var(--serif); font-size:12px; letter-spacing:.32em; color:var(--accent); font-weight:600; display:block; margin-bottom:10px; }
+.sh h2{ font-family:var(--serif); font-weight:600; font-size:clamp(26px,3.2vw,38px); letter-spacing:.06em; line-height:1.35; }
+.sh p{ color:var(--sub); font-size:14px; margin-left:auto; max-width:420px; }
+.darkb .sh p{ color:#B9AA9A; }
+@media (max-width:760px){ .sh p{ margin-left:0; } }
+
+/* できること */
+.svc{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.svc .card{ background:var(--card); border-radius:10px; padding:32px 30px 30px; border-top:3px solid var(--accent); }
+.svc .num{ font-family:var(--serif); color:var(--accent); font-size:13px; letter-spacing:.2em; font-weight:600; }
+.svc h3{ font-family:var(--serif); font-size:21px; font-weight:600; letter-spacing:.04em; margin-top:10px; }
+.svc .size{ font-size:12px; color:var(--accent); margin-top:6px; letter-spacing:.04em; font-weight:500; }
+.svc p{ font-size:14px; line-height:1.95; color:var(--sub); margin-top:16px; }
+.points{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px 40px; margin-top:56px; list-style:none; }
+.points li{ border-top:1px solid var(--line); padding-top:20px; }
+.points b{ font-family:var(--serif); color:var(--accent); font-size:13px; letter-spacing:.2em; }
+.points strong{ display:block; font-size:16px; margin:6px 0 6px; }
+.points small{ display:block; font-size:13.5px; color:var(--sub); line-height:1.9; }
+@media (max-width:860px){ .svc, .points{ grid-template-columns:1fr; } }
+
+/* 作品 */
+.filters{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px; }
+.filters button{ font:inherit; font-size:13px; letter-spacing:.06em; padding:9px 20px; border-radius:999px; border:1px solid var(--line); background:transparent; color:var(--sub); cursor:pointer; transition:all .2s; }
+.filters button:hover{ border-color:var(--ink); color:var(--ink); }
+.filters button[aria-pressed="true"]{ background:var(--ink); border-color:var(--ink); color:#fff; }
+.filters button span{ font-size:11px; opacity:.7; margin-left:6px; }
+.works{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:clamp(20px,2.4vw,32px); }
+.work{ min-width:0; grid-column:span 4; transition:opacity .35s, transform .35s; }
+.work.wide{ grid-column:span 6; }
+.work.hide{ display:none; }
+.work button.pic{ all:unset; display:block; width:100%; cursor:zoom-in; border-radius:8px; overflow:hidden; background:#fff; box-shadow:0 10px 28px -14px rgba(42,35,29,.4); position:relative; }
+.work button.pic img{ transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+.work button.pic:hover img{ transform:scale(1.035); }
+.work button.pic:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; }
+.work button.pic::after{ content:"＋ 拡大"; position:absolute; right:10px; bottom:10px; font-size:11px; letter-spacing:.1em; color:#fff; background:rgba(31,26,22,.7); padding:4px 10px; border-radius:999px; opacity:0; transition:opacity .25s; }
+.work button.pic:hover::after{ opacity:1; }
+.cap{ margin-top:14px; }
+.cap .tag{ font-size:11px; color:var(--accent); font-weight:700; letter-spacing:.16em; }
+.cap h3{ font-size:16px; font-weight:700; letter-spacing:.02em; margin-top:2px; }
+.cap p{ font-size:13.5px; color:var(--sub); line-height:1.85; margin-top:4px; }
+.group-t{ grid-column:1/-1; display:flex; align-items:center; gap:16px; margin-top:24px; }
+.group-t:first-child{ margin-top:0; }
+.group-t h3{ font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:.06em; white-space:nowrap; }
+.group-t span{ font-size:12px; color:var(--mute); }
+@media (max-width:600px){ .group-t{ flex-wrap:wrap; gap:4px 12px; } .group-t::after{ flex-basis:100%; } }
+.group-t::after{ content:""; flex:1; height:1px; background:var(--line); }
+.group-t.hide{ display:none; }
+/* インスタ */
+.work.post{ grid-column:span 5; }
+.work.story{ grid-column:span 3; }
+.work.ptext{ grid-column:span 4; align-self:center; }
+.work.ptext .note{ background:var(--card); border-radius:10px; padding:28px; }
+.work.ptext h4{ font-family:var(--serif); font-size:18px; font-weight:600; margin-bottom:10px; }
+.work.ptext p{ font-size:13.5px; color:var(--sub); line-height:1.9; }
+.work.ptext ul{ list-style:none; margin-top:14px; font-size:13px; }
+.work.ptext li{ padding:8px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:12px; }
+.work.ptext li b{ color:var(--accent); font-weight:700; }
+/* バナー */
+.work.b1200{ grid-column:span 7; }
+.work.bside{ grid-column:span 5; display:grid; grid-template-columns:1fr 1fr; gap:20px; align-content:start; }
+.work.b728{ grid-column:span 7; }
+.work.estate{ grid-column:span 5; grid-row:span 2; }
+.sz{ font-size:11px; color:var(--accent); letter-spacing:.08em; font-weight:700; margin-bottom:8px; }
+.sizeset{ grid-column:span 7; display:grid; grid-template-columns:1fr 1fr; gap:20px; align-content:start; }
+.sizeset .full{ grid-column:1/-1; }
+@media (max-width:960px){
+  .work, .work.wide{ grid-column:span 6; }
+  .work.post{ grid-column:span 7; } .work.story{ grid-column:span 5; } .work.ptext{ grid-column:1/-1; }
+  .sizeset, .work.estate{ grid-column:1/-1; grid-row:auto; }
+  .work.estate{ max-width:520px; }
+}
+@media (max-width:600px){
+  .work, .work.wide, .work.post, .work.story{ grid-column:1/-1; }
+  .work.story{ max-width:300px; }
+  .sizeset{ grid-template-columns:1fr; }
+}
+
+/* 修正前・修正後 */
+.ba{ display:grid; grid-template-columns:1.45fr 1fr; gap:clamp(28px,4vw,56px); align-items:center; }
+.slider{ position:relative; border-radius:8px; overflow:hidden; user-select:none; touch-action:pan-y; box-shadow:0 20px 44px -16px rgba(0,0,0,.6); aspect-ratio:16/9; background:#000; cursor:ew-resize; }
+.slider img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; }
+.slider .before{ clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0); }
+.slider .bar{ position:absolute; top:0; bottom:0; left:var(--pos,50%); width:2px; background:#fff; transform:translateX(-1px); pointer-events:none; }
+.slider .knob{ position:absolute; top:50%; left:var(--pos,50%); width:46px; height:46px; border-radius:50%; background:#fff; color:var(--ink); transform:translate(-50%,-50%); display:grid; place-items:center; font-size:15px; font-weight:700; box-shadow:0 4px 14px rgba(0,0,0,.35); pointer-events:none; }
+.slider .lb{ position:absolute; top:12px; font-size:11px; font-weight:700; letter-spacing:.12em; padding:4px 10px; border-radius:4px; color:#fff; pointer-events:none; }
+.slider .lb.l{ left:12px; background:rgba(60,52,46,.85); }
+.slider .lb.r{ right:12px; background:var(--accent); }
+.slider input{ position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; margin:0; }
+.slider:has(input:focus-visible){ outline:3px solid var(--accent); outline-offset:3px; }
+.ba-tabs{ display:flex; gap:8px; margin-bottom:22px; flex-wrap:wrap; }
+.ba-tabs button{ font:inherit; font-size:13px; padding:8px 18px; border-radius:999px; border:1px solid #5A4E44; background:transparent; color:#D8CCBE; cursor:pointer; }
+.ba-tabs button[aria-pressed="true"]{ background:var(--accent); border-color:var(--accent); color:#fff; }
+.ba h3{ font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:.04em; }
+.changes{ list-style:none; counter-reset:c; margin-top:18px; }
+.changes li{ position:relative; padding:14px 0 14px 38px; border-top:1px solid #3E352E; font-size:14.5px; line-height:1.8; color:#E6DCCF; }
+.changes li:last-child{ border-bottom:1px solid #3E352E; }
+.changes li::before{ content:counter(c); counter-increment:c; position:absolute; left:0; top:15px; width:24px; height:24px; border-radius:50%; background:var(--accent); color:#fff; font-size:12px; font-weight:700; display:grid; place-items:center; }
+.mini{ margin-top:26px; padding-top:20px; border-top:1px solid #3E352E; }
+.mini-t{ font-size:12.5px; color:#D8CCBE; font-weight:700; letter-spacing:.06em; margin-bottom:12px; }
+.mini-row{ display:grid; grid-template-columns:repeat(2,minmax(0,168px)); gap:12px; }
+.mini figure{ margin:0; }
+.mini img{ border-radius:4px; }
+.mini figcaption{ font-size:11.5px; color:#A89A8B; margin-top:6px; }
+.ba .hint{ font-size:12.5px; color:#A89A8B; margin-top:18px; }
+@media (max-width:860px){ .ba{ grid-template-columns:1fr; } }
+
+/* 料金 */
+.price-wrap{ display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(28px,4vw,64px); align-items:start; }
+table.price{ width:100%; border-collapse:collapse; }
+table.price td{ padding:18px 0; border-bottom:1px solid var(--line); font-size:15px; }
+table.price tr:first-child td{ border-top:1px solid var(--line); }
+table.price td small{ color:var(--mute); font-size:12px; margin-left:8px; }
+table.price tr.ex td{ text-align:left; font-family:var(--sans); font-size:13.5px; font-weight:400; white-space:normal; color:var(--sub); background:rgba(184,98,63,.07); padding:14px 16px; border-bottom:0; }
+table.price tr.ex b{ display:inline-block; font-size:11px; color:#fff; background:var(--accent); border-radius:3px; padding:1px 7px; margin-right:8px; }
+table.price tr.ex .calc{ display:block; margin-top:4px; color:var(--ink); }
+table.price tr.ex strong{ font-family:var(--serif); font-size:17px; color:var(--accent); }
+table.price td:last-child{ text-align:right; font-family:var(--serif); font-weight:600; font-size:22px; white-space:nowrap; letter-spacing:.02em; }
+table.price td:last-child span{ font-size:13px; font-family:var(--sans); font-weight:500; margin-left:2px; color:var(--sub); }
+.cond{ background:var(--card); border-radius:10px; padding:28px 28px 24px; }
+.cond dl{ display:grid; grid-template-columns:112px 1fr; gap:14px 16px; font-size:14px; line-height:1.8; }
+.cond dt{ color:var(--accent); font-weight:700; }
+.cond .note{ font-size:12.5px; color:var(--mute); margin-top:20px; padding-top:16px; border-top:1px solid var(--line); line-height:1.8; }
+@media (max-width:860px){ .price-wrap{ grid-template-columns:1fr; } }
+@media (max-width:420px){ .cond dl{ grid-template-columns:1fr; gap:2px; } .cond dd{ margin-bottom:12px; } table.price td{ font-size:14px; } table.price td small{ display:block; margin:2px 0 0; } }
+
+/* 流れ */
+.flow{ display:grid; grid-template-columns:repeat(5,1fr); list-style:none; counter-reset:s; }
+.flow li{ position:relative; padding:0 24px 0 0; }
+.flow .n{ font-family:var(--serif); color:var(--accent); font-size:13px; letter-spacing:.2em; font-weight:600; }
+.flow .bar{ height:2px; background:var(--line); margin:14px 0 22px; position:relative; }
+.flow .bar::before{ content:""; position:absolute; left:0; top:-5px; width:12px; height:12px; border-radius:50%; background:var(--accent); }
+.flow h3{ font-family:var(--serif); font-size:19px; font-weight:600; margin-bottom:10px; }
+.flow p{ font-size:13.5px; line-height:1.9; color:var(--sub); }
+@media (max-width:900px){
+  .flow{ grid-template-columns:1fr; gap:0; }
+  .flow li{ padding:0 0 28px 32px; border-left:2px solid var(--line); margin-left:6px; }
+  .flow li:last-child{ border-color:transparent; }
+  .flow .bar{ display:none; }
+  .flow li::before{ content:""; position:absolute; left:-7px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--accent); }
+}
+.info{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:64px; }
+.info .box{ background:var(--card); border-radius:10px; padding:30px 28px; }
+.info h3{ font-family:var(--serif); font-size:18px; font-weight:600; margin-bottom:12px; }
+.info p{ font-size:13.5px; line-height:1.95; color:var(--sub); }
+@media (max-width:860px){ .info{ grid-template-columns:1fr; } }
+
+/* 締め */
+.closing{ text-align:center; padding:clamp(72px,10vw,128px) 0; background:var(--dark); color:#F3ECE2; }
+.closing .eyebrow{ color:#D08A68; }
+.closing h2{ font-family:var(--serif); font-weight:600; font-size:clamp(24px,3.2vw,36px); letter-spacing:.08em; line-height:1.6; margin-top:18px; }
+.closing p{ color:#B9AA9A; margin-top:16px; font-size:14.5px; }
+.cond .note a{ color:var(--accent); font-weight:700; text-decoration:none; margin-left:6px; white-space:nowrap; }
+.tpl{ max-width:640px; margin:32px auto 0; text-align:left; background:#2B241F; border:1px solid #3E352E; border-radius:12px; padding:24px 24px 20px; }
+.tpl pre{ font-family:var(--sans); white-space:pre-wrap; font-size:14px; line-height:2; color:#EFE6DA; }
+.copy{ font:inherit; font-size:13px; font-weight:700; margin-top:14px; padding:10px 20px; border-radius:999px; border:0; background:var(--accent); color:#fff; cursor:pointer; }
+.copy:hover{ background:#C9714E; }
+.tpl-help{ font-size:12.5px !important; color:#A89A8B !important; margin-top:10px !important; }
+.closing .thanks{ margin-top:40px; font-family:var(--serif); font-size:15px; letter-spacing:.08em; color:#D8CCBE; }
+.to-ba{ display:inline-block; margin-top:8px; font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none; }
+.to-ba:hover{ text-decoration:underline; }
+.changes li .was{ display:block; font-size:12.5px; color:#A89A8B; }
+.changes li .was::after{ content:" →"; }
+footer{ background:var(--dark); color:#8C7F72; font-size:12px; line-height:1.9; padding:0 0 40px; }
+footer .wrap{ border-top:1px solid #3A322B; padding-top:28px; display:flex; flex-wrap:wrap; gap:12px 32px; justify-content:space-between; }
+footer .logo{ color:#E8DDD0; }
+
+/* 拡大表示 */
+dialog.lb{ border:0; padding:0; background:transparent; max-width:none; max-height:none; width:100%; height:100%; }
+dialog.lb::backdrop{ background:rgba(20,16,13,.92); }
+dialog.lb .in{ position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:56px var(--gut) 24px; gap:14px; }
+dialog.lb img{ max-width:min(100%,1280px); max-height:calc(100vh - 140px); width:auto; height:auto; border-radius:6px; box-shadow:0 20px 60px rgba(0,0,0,.5); }
+dialog.lb .t{ color:#E8DDD0; font-size:13px; text-align:center; letter-spacing:.04em; }
+dialog.lb .x{ position:fixed; top:14px; right:14px; width:44px; height:44px; border-radius:50%; border:0; background:rgba(255,255,255,.12); color:#fff; font-size:22px; cursor:pointer; }
+dialog.lb .x:hover{ background:rgba(255,255,255,.25); }
+dialog.lb .nav-b{ position:fixed; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; border:0; background:rgba(255,255,255,.12); color:#fff; font-size:20px; cursor:pointer; }
+dialog.lb .nav-b:hover{ background:rgba(255,255,255,.25); }
+dialog.lb .prev{ left:14px; } dialog.lb .next{ right:14px; }
+@media (max-width:600px){ dialog.lb .nav-b{ top:auto; bottom:18px; transform:none; } }
+
+/* ふわっと出る */
+.reveal{ opacity:0; transform:translateY(22px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal.on{ opacity:1; transform:none; }
+html.noanim .reveal{ opacity:1; transform:none; transition:none; }
+@media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } .collage figure{ animation:none; } html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#">RIRERA <span>STUDIO</span></a>
+    <nav class="nav" aria-label="ページ内リンク">
+      <a href="#about">できること</a>
+      <a href="#works">作品</a>
+      <a href="#before-after">修正例</a>
+      <a href="#price">料金</a>
+      <a href="#flow">ご依頼の流れ</a>
+    </nav>
+    <a class="nav-cta" href="#contact">ご相談</a>
+  </div>
+</header>
+
+<main>
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">PORTFOLIO</div>
+      <p class="kind">YouTubeサムネイル・SNS画像の制作</p>
+      <h1>小さく見ても、<br><em>ひと目で伝わる</em><br>デザインを。</h1>
+      <div class="rule"></div>
+      <p class="lead">リレラスタジオは、YouTubeサムネイル、インスタ投稿、広告バナーを作る小さなデザインスタジオです。スマホの一覧の中で指が止まり、内容がすぐにわかる形に仕上げます。</p>
+      <ul class="facts" aria-label="ご依頼の条件">
+        <li><b>1,500</b>円〜<small>サムネイル1枚</small></li>
+        <li><b>2〜3</b>日<small>初稿の目安(契約・素材受領後)</small></li>
+        <li><b>2</b>回<small>修正は無料</small></li>
+      </ul>
+      <div class="btns">
+        <a class="btn main" href="#works" data-go="yt">YouTubeの作例 <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#works" data-go="shop">お店・SNSの作例 <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="shop-note">美容室のキャンペーン告知・イベント告知・カルーセル・広告バナーなど</p>
+      <a class="to-contact" href="#contact">依頼が決まっている方は、見積り相談の準備へ →</a>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <figure class="c1"><img src="img/game.jpg" alt=""><figcaption>YOUTUBE</figcaption></figure>
+      <figure class="c2"><img src="img/salon.jpg" alt=""><figcaption>INSTAGRAM</figcaption></figure>
+      <figure class="c3"><img src="img/s1200.jpg" alt=""><figcaption>AD BANNER</figcaption></figure>
+      <figure class="c4"><img src="img/beauty.jpg" alt=""><figcaption>YOUTUBE</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- できること -->
+<section class="block alt" id="about">
+  <div class="wrap">
+    <div class="sh reveal"><div><span class="no">ABOUT</span><h2>できること</h2></div><p>動画や投稿の中身が、見る人にまっすぐ届くように。読みやすさと、目に止まる強さの両方を大切にしています。</p></div>
+    <div class="svc">
+      <div class="card reveal"><div class="num">01</div><h3>YouTubeサムネイル</h3><div class="size">1280×720</div>
+        <p>ゲーム実況・お金の解説・美容・旅行・恋愛トーク・暮らしの解説など。一覧の中で目に止まり、内容がひと目でわかる形に仕上げます。</p></div>
+      <div class="card reveal"><div class="num">02</div><h3>インスタ投稿</h3><div class="size">投稿 1080×1350 ／ ストーリーズ 1080×1920</div>
+        <p>キャンペーン告知、カルーセル投稿(複数枚)、ストーリーズ。保存やタップにつながる流れと、アカウントの統一感を大切にします。</p></div>
+      <div class="card reveal"><div class="num">03</div><h3>広告バナー</h3><div class="size">1080×1080 ／ 1200×628 ／ 300×250 ／ 728×90 など</div>
+        <p>SNS広告・Web広告のバナー。1つのデザインを、出す場所に合わせた複数のサイズに作り分けます。</p></div>
+    </div>
+    <ul class="points">
+      <li class="reveal"><b>POINT 01</b><strong>小さく表示しても読める</strong><small>スマホの一覧と同じ大きさに縮めて、文字の大きさと配色を確かめます。</small></li>
+      <li class="reveal"><b>POINT 02</b><strong>同じジャンルの一覧で見え方を確認</strong><small>人気のサムネイルと並べ、見出しが読みやすいか、顔や商品が文字で隠れていないかを確かめます。</small></li>
+      <li class="reveal"><b>POINT 03</b><strong>あとから直せるデータで納品</strong><small>文字を差し替えられるPSD(レイヤー分け)を、PNG・JPGと一緒にお渡しします。</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 作品 -->
+<section class="block" id="works">
+  <div class="wrap">
+    <div class="sh reveal"><div><span class="no">WORKS</span><h2>作品</h2></div><p>画像を押すと拡大できます。掲載作品はすべて、架空のクライアントを想定した自主制作の作例です。</p></div>
+    <div class="filters" role="group" aria-label="作品の種類で絞り込む">
+      <button type="button" data-f="all" aria-pressed="true">すべて<span>16点</span></button>
+      <button type="button" data-f="yt" aria-pressed="false">YouTubeサムネイル<span>6点</span></button>
+      <button type="button" data-f="ig" aria-pressed="false">インスタ<span>5点</span></button>
+      <button type="button" data-f="bn" aria-pressed="false">広告バナー<span>5点</span></button>
+      <button type="button" data-f="shop" aria-pressed="false">お店・SNS向け<span>10点</span></button>
+    </div>
+
+    <div class="works" id="worksGrid">
+      <!-- YouTube -->
+      <div class="group-t" data-cat="yt"><h3>YouTubeサムネイル</h3><span>1280×720</span></div>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/game.jpg" alt="ゲーム実況のサムネイル。ボスの顔と実況者の驚いた表情、「初見で全クリ!?」の文字" loading="lazy"></button>
+        <div class="cap"><span class="tag">GAME</span><h3>ゲーム実況</h3><p>ボスの顔・実況者の表情・企画内容を、小さくても読める配置に。</p><a class="to-ba" href="#before-after" data-ba-go="0">修正のポイントを見る →</a></div></article>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/money.jpg" alt="お金の解説のサムネイル。「いる？いらない？」の問いかけと金額" loading="lazy"></button>
+        <div class="cap"><span class="tag">MONEY</span><h3>お金の解説</h3><p>「いる？いらない？」の問いかけを主役に、金額を最初に読ませる。</p><a class="to-ba" href="#before-after" data-ba-go="1">修正のポイントを見る →</a></div></article>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/beauty.jpg" alt="美容・コスメのサムネイル。「1,000円以下」のプチプラコスメランキング" loading="lazy"></button>
+        <div class="cap"><span class="tag">BEAUTY</span><h3>美容・コスメ</h3><p>「1,000円以下」を左上に置き、価格で探す人が一覧で見つけやすくしました。</p><a class="to-ba" href="#before-after" data-ba-go="2">修正のポイントを見る →</a></div></article>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/love.jpg" alt="恋愛トークのサムネイル。人物の表情と吹き出し" loading="lazy"></button>
+        <div class="cap"><span class="tag">TALK</span><h3>恋愛トーク</h3><p>強調したい言葉を赤に。表情と吹き出しで続きが気になる作り。</p></div></article>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/travel.jpg" alt="旅行VLOGのサムネイル。京都の街並みと地名・日数・予算" loading="lazy"></button>
+        <div class="cap"><span class="tag">VLOG</span><h3>旅行VLOG</h3><p>旅先の空気が伝わる写真を大きく。地名・日数・予算を読む順に。</p></div></article>
+      <article class="work" data-cat="yt"><button class="pic" type="button"><img src="img/lifehack.jpg" alt="人物なし・文字中心の暮らしの解説サムネイル" loading="lazy"></button>
+        <div class="cap"><span class="tag">NO FACE</span><h3>人物なし・文字中心</h3><p>写真の見どころにマークを付け、顔出しなしでも伝わる形に。</p></div></article>
+
+      <!-- インスタ -->
+      <div class="group-t" data-cat="ig"><h3>インスタ投稿・ストーリーズ</h3><span>投稿・ストーリーズ・カルーセル(3枚1組)</span></div>
+      <article class="work post" data-cat="ig"><button class="pic" type="button"><img src="img/salon.jpg" alt="美容室の冬のキャンペーン告知のインスタ投稿" loading="lazy"></button>
+        <div class="cap"><span class="tag">POST ／ 4:5</span><h3>美容室のキャンペーン告知</h3><p>モデル写真を主役に、文字は顔や髪にかからない位置へ。メニュー → 価格 → 期限 → 予約方法の順に読めます。</p></div></article>
+      <article class="work story" data-cat="ig"><button class="pic" type="button"><img src="img/story.jpg" alt="クリスマスマーケットの告知のインスタストーリーズ" loading="lazy"></button>
+        <div class="cap"><span class="tag">STORIES ／ 9:16</span><h3>マーケットの告知</h3><p>上下の表示に隠れない位置に、日時・会場を置きました。</p></div></article>
+      <div class="work ptext" data-cat="ig"><div class="note reveal"><h4>インスタで気をつけていること</h4><p>投稿は一覧で切り取られても主役が見えるように、ストーリーズは画面の上下に重なるアイコンや返信欄をよけて文字を置きます。</p>
+        <ul><li>投稿<b>1080×1350</b></li><li>ストーリーズ<b>1080×1920</b></li><li>カルーセル<b>最大10枚まで対応</b></li></ul></div></div>
+
+      <article class="work" data-cat="ig"><button class="pic" type="button"><img src="img/car1.jpg" alt="カルーセル投稿1枚目。朝15分の過ごし方3つの表紙" loading="lazy"></button>
+        <div class="cap"><span class="tag">CAROUSEL 1 ／ 表紙</span><h3>続きを見たくなる表紙</h3><p>大きな見出しと「順番を見る →」で、次の画像へ進んでもらいます。</p></div></article>
+      <article class="work" data-cat="ig"><button class="pic" type="button"><img src="img/car2.jpg" alt="カルーセル投稿2枚目。起きてからの15分のコツ" loading="lazy"></button>
+        <div class="cap"><span class="tag">CAROUSEL 2 ／ 中身</span><h3>順番どおりに読める中身</h3><p>起きてからの順に、3つのコツをカードで並べました。</p></div></article>
+      <article class="work" data-cat="ig"><button class="pic" type="button"><img src="img/car3.jpg" alt="カルーセル投稿3枚目。チェックリストと保存のおねがい" loading="lazy"></button>
+        <div class="cap"><span class="tag">CAROUSEL 3 ／ まとめ</span><h3>保存したくなるまとめ</h3><p>チェックリストのあとに、保存をうながすボタンを置きました。</p></div></article>
+
+      <!-- バナー -->
+      <div class="group-t" data-cat="bn"><h3>広告バナー</h3><span>1つのデザインを4サイズに展開</span></div>
+      <div class="sizeset work" data-cat="bn">
+        <div class="full"><div class="sz">1200 × 628 ／ SNS・Web広告(横長)</div><button class="pic" type="button"><img src="img/s1200.jpg" alt="調理器具ブランドの広告バナー 1200×628" loading="lazy"></button></div>
+        <div><div class="sz">1080 × 1080 ／ SNS広告</div><button class="pic" type="button"><img src="img/skillet.jpg" alt="調理器具ブランドの広告バナー 1080×1080" loading="lazy"></button></div>
+        <div><div class="sz">300 × 250 ／ Web広告</div><button class="pic" type="button"><img src="img/s300.jpg" alt="調理器具ブランドの広告バナー 300×250" loading="lazy"></button>
+          <div class="cap"><span class="tag">SIZE SET</span><h3>調理器具ブランドの広告</h3><p>商品写真・コピー・ボタンの優先順位をそろえ、どのサイズでも同じ広告だとわかるように。小さいサイズでは文字を絞り、読める大きさを保っています。</p></div></div>
+        <div class="full"><div class="sz">728 × 90 ／ Web広告(横長)</div><button class="pic" type="button"><img src="img/s728.jpg" alt="調理器具ブランドの広告バナー 728×90" loading="lazy"></button></div>
+      </div>
+      <article class="work estate" data-cat="bn"><div class="sz">1080 × 1350 ／ SNS広告</div><button class="pic" type="button"><img src="img/estate.jpg" alt="モデルハウス見学会の告知バナー" loading="lazy"></button>
+        <div class="cap"><span class="tag">REAL ESTATE</span><h3>モデルハウス見学会</h3><p>外観写真を大きく。日時・価格・特長・予約ボタンを読む順に並べました。</p></div></article>
+    </div>
+    <div class="works-end reveal"><p>このような画像を依頼したい方へ</p><a class="to-contact" href="#contact">見積り相談の準備を見る →</a></div>
+  </div>
+</section>
+
+<!-- 修正前・修正後 -->
+<section class="block darkb" id="before-after">
+  <div class="wrap">
+    <div class="sh reveal"><div><span class="no">BEFORE / AFTER</span><h2>修正前・修正後</h2></div><p>最初の案から、見比べと修正を重ねて仕上げた例です。ご依頼でも、ご要望に合わせて同じように修正します。</p></div>
+    <div class="ba reveal">
+      <div>
+        <div class="slider" id="slider" style="--pos:50%">
+          <img id="baAfter" src="img/game.jpg" alt="修正後">
+          <img id="baBefore" class="before" src="img/game-before.jpg" alt="修正前">
+          <span class="lb l">修正前</span><span class="lb r">修正後</span>
+          <div class="bar"></div><div class="knob" aria-hidden="true">⇆</div>
+          <input type="range" min="0" max="100" value="50" aria-label="修正前と修正後を見比べるスライダー">
+        </div>
+      </div>
+      <div>
+        <div class="ba-tabs" role="group" aria-label="見比べる作品">
+          <button type="button" data-ba="0" aria-pressed="true">ゲーム実況</button>
+          <button type="button" data-ba="1" aria-pressed="false">お金の解説</button>
+          <button type="button" data-ba="2" aria-pressed="false">美容・コスメ</button>
+        </div>
+        <h3 id="baTitle">ゲーム実況サムネイル</h3>
+        <ol class="changes" id="baList"></ol>
+        <p class="hint">真ん中の丸を左右に動かすと、修正前と修正後を見比べられます。</p>
+        <div class="mini"><div class="mini-t">スマホの一覧と同じくらいの大きさ</div>
+          <div class="mini-row"><figure><img id="miniB" src="img/game-before.jpg" alt="修正前を小さく表示"><figcaption>修正前</figcaption></figure><figure><img id="miniA" src="img/game.jpg" alt="修正後を小さく表示"><figcaption>修正後</figcaption></figure></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="block" id="price">
+  <div class="wrap">
+    <div class="sh reveal"><div><span class="no">PRICE</span><h2>料金の目安</h2></div><p>クラウドワークスでの契約金額(税込)の目安です。内容と納期により、ご相談のうえ決めます。</p></div>
+    <div class="price-wrap">
+      <table class="price reveal">
+        <tr><td>YouTubeサムネイル<small>1枚</small></td><td>1,500<span>円〜</span></td></tr>
+        <tr><td>インスタ投稿・ストーリーズ<small>1枚</small></td><td>1,500<span>円〜</span></td></tr>
+        <tr><td>カルーセル投稿<small>3枚</small></td><td>4,000<span>円〜</span></td></tr>
+        <tr><td>広告バナー<small>1サイズ</small></td><td>2,000<span>円〜</span></td></tr>
+        <tr><td>同じデザインのサイズ展開<small>1サイズ追加</small></td><td>800<span>円〜</span></td></tr>
+        <tr class="ex"><td colspan="2"><b>例</b>広告バナーを、作品例と同じ4サイズで作る場合<span class="calc">2,000円 ＋ 800円 × 3 ＝ <strong>4,400円〜</strong></span></td></tr>
+      </table>
+      <div class="cond reveal">
+        <dl>
+          <dt>納品データ</dt><dd>PNG・JPG・PSD(レイヤー分け。使用フォント名もお伝えします)</dd>
+          <dt>修正</dt><dd>2回まで無料。まとめていただいたご指摘を反映してお返しするまでを1回と数えます(カルーセルは3枚で1件)</dd>
+          <dt>サイズ展開</dt><dd>サイズに合わせた写真の位置調整と、文字の組み直しを含みます</dd>
+          <dt>料金に含むもの</dt><dd>初稿1案・修正2回・上の3形式での納品</dd>
+          <dt>入れる文字</dt><dd>タイトルや見出しはご指定ください。文言の案からご希望の場合はご相談ください</dd>
+          <dt>初稿</dt><dd>契約と素材の受け取りから2〜3日が目安です。土日をはさむ場合は、お見積りのときに日付でお伝えします</dd>
+          <dt>お見積り</dt><dd>素材探しが多い場合、複数案のご希望、修正3回目以降は、事前に金額をお伝えします</dd>
+        </dl>
+        <p class="note">継続でのご依頼や、まとめてのご依頼もご相談ください。<a href="#contact">相談のしかたを見る →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 流れ -->
+<section class="block alt" id="flow">
+  <div class="wrap">
+    <div class="sh reveal"><div><span class="no">FLOW</span><h2>ご依頼の流れ</h2></div><p>やり取りはすべてクラウドワークスのメッセージで行います。</p></div>
+    <ol class="flow">
+      <li class="reveal"><div class="n">STEP 1</div><div class="bar"></div><h3>ご相談</h3><p>動画や投稿の内容、入れたい文字、サイズ、納期をお聞きします。参考にしたい画像があればお送りください。</p></li>
+      <li class="reveal"><div class="n">STEP 2</div><div class="bar"></div><h3>お見積り・契約</h3><p>内容に合わせて金額と納期をお伝えし、クラウドワークス上で契約します。</p></li>
+      <li class="reveal"><div class="n">STEP 3</div><div class="bar"></div><h3>初稿</h3><p>契約と素材の受け取りから、2〜3日が目安です。スマホで見たときの見え方も確かめてお送りします。</p></li>
+      <li class="reveal"><div class="n">STEP 4</div><div class="bar"></div><h3>修正</h3><p>2回まで無料です。気になるところをまとめてお知らせいただき、反映してお返しするまでを1回と数えます。</p></li>
+      <li class="reveal"><div class="n">STEP 5</div><div class="bar"></div><h3>納品</h3><p>PNG・JPGと、文字を差し替えられるPSD(レイヤー分け)をお渡しします。</p></li>
+    </ol>
+    <div class="info">
+      <div class="box reveal"><h3>お返事と作業の時間</h3><p>メッセージには24時間以内にお返事します。初稿は契約と素材の受け取りから2〜3日が目安です。土日の対応は、ご依頼ごとにお知らせします。副業として活動しており、平日は夜(19時〜23時ごろ)に作業します。</p></div>
+      <div class="box reveal"><h3>AIの利用について</h3><p>写真などの素材づくりに画像生成AIを使い、合成・文字入れ・色の調整はPhotoshopで仕上げています。AIを使わない制作をご希望の場合は、事前にお知らせください。</p></div>
+      <div class="box reveal"><h3>素材と権利</h3><p>ご支給の写真・ロゴは、お客さまが権利をお持ちのものをお送りください。こちらで用意するフォントや素材は、商用利用できるものだけを使い、納品前に確認しています。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="closing" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">CONTACT</div>
+    <h2>ご相談は、クラウドワークスの<br>メッセージからどうぞ。</h2>
+    <p>はじめてのメッセージには、下の項目をわかる範囲でお知らせください。<br>決まっていない項目は「未定」で大丈夫です。</p>
+    <div class="tpl">
+      <pre id="tpl">【依頼内容】動画・投稿の内容(例:ゲーム実況の新シリーズ第1回)
+【枚数・サイズ】(例:サムネイル1枚／インスタ投稿3枚)
+【希望の納期】(例:12月10日まで)
+【用意できる素材】写真・ロゴ・参考にしたい画像など
+【参考にしたい作例】このページの作品名(任意)</pre>
+      <button type="button" class="copy" id="copyBtn">相談テンプレートをコピー</button>
+      <p class="tpl-help" id="copyMsg" aria-live="polite">コピーした文を、クラウドワークスのメッセージ欄に貼り付けて、わかる項目からご記入ください。</p>
+    </div>
+    <p class="thanks">ご覧いただき、ありがとうございました。</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><span class="logo">RIRERA <span>STUDIO</span></span><br>リレラスタジオ</div>
+    <div>掲載作品はすべて、架空のクライアントを想定した自主制作の作例です。店名・ブランド名・人物は実在しません。<br>写真などの素材は画像生成AIで作成し、合成・文字入れ・色の調整はPhotoshopで仕上げています。</div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="作品の拡大表示">
+  <div class="in">
+    <button class="x" type="button" aria-label="閉じる">×</button>
+    <button class="nav-b prev" type="button" aria-label="前の作品">←</button>
+    <img id="lbImg" src="" alt="">
+    <div class="t" id="lbT"></div>
+    <button class="nav-b next" type="button" aria-label="次の作品">→</button>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  // ヘッダーの線
+  var top = document.getElementById('top');
+  addEventListener('scroll', function(){ top.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+  // ふわっと出る(#all を付けると最初から全部表示)
+  if(location.hash === '#all') document.documentElement.classList.add('noanim');
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -8% 0px'}) : null;
+  document.querySelectorAll('.reveal, .work:not(.ptext)').forEach(function(el){
+    if(!el.classList.contains('reveal')) el.classList.add('reveal');
+    io ? io.observe(el) : el.classList.add('on');
+  });
+
+  // 絞り込み
+  var fb = document.querySelectorAll('.filters button');
+  fb.forEach(function(b){ b.addEventListener('click', function(){ filterTo(b.dataset.f); }); });
+
+  function filterTo(f){
+    fb.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.f === f ? 'true' : 'false'); });
+    document.querySelectorAll('#worksGrid > [data-cat]').forEach(function(el){
+      var show = f === 'all' || el.dataset.cat === f || (f === 'shop' && (el.dataset.cat === 'ig' || el.dataset.cat === 'bn'));
+      el.classList.toggle('hide', !show); if(show) el.classList.add('on');
+    });
+  }
+  document.querySelectorAll('[data-go]').forEach(function(a){ a.addEventListener('click', function(){ filterTo(a.dataset.go); }); });
+
+  // 拡大表示
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbT = document.getElementById('lbT');
+  var pics = Array.prototype.slice.call(document.querySelectorAll('#worksGrid button.pic')), cur = 0;
+  function visible(){ return pics.filter(function(p){ return !p.closest('.hide'); }); }
+  function show(p){
+    var img = p.querySelector('img'), v = visible(); cur = v.indexOf(p);
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    var art = p.closest('.work'), h = art && art.querySelector('.cap h3'), sz = p.parentNode.querySelector('.sz');
+    lbT.textContent = [h ? h.textContent : '', sz ? sz.textContent : ''].filter(Boolean).join(' ／ ');
+  }
+  function step(d){ var v = visible(); show(v[(cur + d + v.length) % v.length]); }
+  pics.forEach(function(p){ p.addEventListener('click', function(){ show(p); if(lb.showModal) lb.showModal(); }); });
+  lb.querySelector('.x').addEventListener('click', function(){ lb.close(); });
+  lb.querySelector('.prev').addEventListener('click', function(){ step(-1); });
+  lb.querySelector('.next').addEventListener('click', function(){ step(1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb || e.target.classList.contains('in')) lb.close(); });
+  lb.addEventListener('keydown', function(e){ if(e.key === 'ArrowLeft') step(-1); if(e.key === 'ArrowRight') step(1); });
+  var sx = null;
+  lb.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){ if(sx === null) return; var dx = e.changedTouches[0].clientX - sx; if(Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); sx = null; });
+
+  // 修正前・修正後
+  var BA = [
+    {t:'ゲーム実況サムネイル', b:'img/game-before.jpg', a:'img/game.jpg', c:[['文字がボスの顔を隠していた','文字を動かして、ボスの目と牙が見えるようにした'],['誰の実況かが伝わらなかった','実況者のリアクションと吹き出しを入れた'],['企画内容が2か所に分かれていた','「ボス10連戦」を1行の帯にまとめた']]},
+    {t:'お金の解説サムネイル', b:'img/money-before.jpg', a:'img/money.jpg', c:[['何の話かが一目でわからなかった','問いかけ「いる？いらない？」を主役にして色分けした'],['金額が小さく埋もれていた','「20万円」を最初に読める大きさにした']]},
+    {t:'美容・コスメのサムネイル', b:'img/beauty-before.jpg', a:'img/beauty.jpg', c:[['価格で探す人に届きにくかった','「1,000円以下」をいちばん上の主役にした'],['ランキングの中身が見えなかった','選び方「色もちで選ぶ」を入れて具体的にした']]}
+  ];
+  var slider = document.getElementById('slider'), range = slider.querySelector('input');
+  range.addEventListener('input', function(){ slider.style.setProperty('--pos', range.value + '%'); });
+  var bb = document.querySelectorAll('.ba-tabs button');
+  function setBA(i){
+    var d = BA[i];
+    document.getElementById('baBefore').src = d.b; document.getElementById('baAfter').src = d.a;
+    document.getElementById('miniB').src = d.b; document.getElementById('miniA').src = d.a;
+    document.getElementById('baTitle').textContent = d.t;
+    document.getElementById('baList').innerHTML = d.c.map(function(x){ return '<li><span class="was">' + x[0] + '</span>' + x[1] + '</li>'; }).join('');
+    bb.forEach(function(x, j){ x.setAttribute('aria-pressed', j === i ? 'true' : 'false'); });
+    range.value = 50; slider.style.setProperty('--pos', '50%');
+  }
+  bb.forEach(function(b){ b.addEventListener('click', function(){ setBA(+b.dataset.ba); }); });
+  document.querySelectorAll('[data-ba-go]').forEach(function(a){ a.addEventListener('click', function(){ setBA(+a.dataset.baGo); }); });
+
+  // 相談のひな形をコピー
+  var cb = document.getElementById('copyBtn'), cm = document.getElementById('copyMsg'), tpl = document.getElementById('tpl');
+  var LABEL = cb.textContent, HELP = cm.textContent;
+  function ok(){ cb.textContent = 'コピーしました'; cm.textContent = 'コピーしました。クラウドワークスに戻り、メッセージ欄に貼り付けてください。'; setTimeout(function(){ cb.textContent = LABEL; }, 2500); }
+  function ng(){ var r = document.createRange(); r.selectNodeContents(tpl); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    cm.textContent = 'うまくコピーできませんでした。文を選んだ状態にしたので、長押しや右クリックでコピーしてください。'; setTimeout(function(){ cm.textContent = HELP; }, 6000); }
+  cb.addEventListener('click', function(){
+    var t = tpl.textContent;
+    if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(t).then(ok, legacy); } else { legacy(); }
+    function legacy(){ var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly',''); ta.style.cssText = 'position:fixed;opacity:0'; document.body.appendChild(ta); ta.select();
+      var done = false; try{ done = document.execCommand('copy'); }catch(e){} ta.remove(); done ? ok() : ng(); }
+  });
+
+  setBA(0);
+})();
+</script>
+</body>
+</html>
