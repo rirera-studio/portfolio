@@ -145,6 +145,8 @@ section.darkb{ background:var(--dark); color:#F3ECE2; }
 .work.bside{ grid-column:span 5; display:grid; grid-template-columns:1fr 1fr; gap:20px; align-content:start; }
 .work.b728{ grid-column:span 7; }
 .work.estate{ grid-column:span 5; grid-row:span 2; }
+.work.sale{ grid-column:1/-1; display:grid; grid-template-columns:5fr 7fr; gap:clamp(20px,3vw,40px); align-items:center; }
+.work.sale .cap{ max-width:460px; }
 .sz{ font-size:11px; color:var(--accent); letter-spacing:.08em; font-weight:700; margin-bottom:8px; }
 .sizeset{ grid-column:span 7; display:grid; grid-template-columns:1fr 1fr; gap:20px; align-content:start; }
 .sizeset .full{ grid-column:1/-1; }
@@ -153,6 +155,7 @@ section.darkb{ background:var(--dark); color:#F3ECE2; }
   .work.post{ grid-column:span 7; } .work.story{ grid-column:span 5; } .work.ptext{ grid-column:1/-1; }
   .sizeset, .work.estate{ grid-column:1/-1; grid-row:auto; }
   .work.estate{ max-width:520px; }
+  .work.sale{ grid-template-columns:1fr; max-width:520px; }
 }
 @media (max-width:600px){
   .work, .work.wide, .work.post, .work.story{ grid-column:1/-1; }
@@ -341,11 +344,11 @@ html.noanim .reveal{ opacity:1; transform:none; transition:none; }
   <div class="wrap">
     <div class="sh reveal"><div><span class="no">WORKS</span><h2>作品</h2></div><p>画像を押すと拡大できます。掲載作品はすべて、架空のクライアントを想定した自主制作の作例です。</p></div>
     <div class="filters" role="group" aria-label="作品の種類で絞り込む">
-      <button type="button" data-f="all" aria-pressed="true">すべて<span>16点</span></button>
+      <button type="button" data-f="all" aria-pressed="true">すべて<span>17点</span></button>
       <button type="button" data-f="yt" aria-pressed="false">YouTubeサムネイル<span>6点</span></button>
       <button type="button" data-f="ig" aria-pressed="false">インスタ<span>5点</span></button>
-      <button type="button" data-f="bn" aria-pressed="false">広告バナー<span>5点</span></button>
-      <button type="button" data-f="shop" aria-pressed="false">お店・SNS向け<span>10点</span></button>
+      <button type="button" data-f="bn" aria-pressed="false">広告バナー<span>6点</span></button>
+      <button type="button" data-f="shop" aria-pressed="false">お店・SNS向け<span>11点</span></button>
     </div>
 
     <div class="works" id="worksGrid">
@@ -391,6 +394,8 @@ html.noanim .reveal{ opacity:1; transform:none; transition:none; }
       </div>
       <article class="work estate" data-cat="bn"><div class="sz">1080 × 1350 ／ SNS広告</div><button class="pic" type="button"><img src="img/estate.jpg" alt="モデルハウス見学会の告知バナー" loading="lazy"></button>
         <div class="cap"><span class="tag">REAL ESTATE</span><h3>モデルハウス見学会</h3><p>外観写真を大きく。日時・価格・特長・予約ボタンを読む順に並べました。</p></div></article>
+      <article class="work sale" data-cat="bn"><div><div class="sz">1080 × 1080 ／ SNS広告</div><button class="pic" type="button"><img src="img/sale.jpg" alt="洋菓子店のいちごスイーツフェア 全品20%OFFの告知バナー" loading="lazy"></button></div>
+        <div class="cap"><span class="tag">SALE</span><h3>いちごスイーツフェアの告知</h3><p>明るいピンクでフェアの楽しさを。「全品20%OFF」をいちばん大きくし、すぐ下に終了日を置いて、割引と期限が続けて読めるようにしました。</p></div></article>
     </div>
     <div class="works-end reveal"><p>このような画像を依頼したい方へ</p><a class="to-contact" href="#contact">見積り相談の準備を見る →</a></div>
   </div>
